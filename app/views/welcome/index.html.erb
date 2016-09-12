@@ -1,0 +1,56 @@
+<div class="container">
+	<h1 class="center-align">Shop AJAX</h1>
+	<hr>
+	<button id="load_products">Load Products</button>
+	<button id="show_create">Create Product</button>
+	<div class="row">		
+		<div class="col s6 offset-s3">
+			<div class="no-display p-form" id="create_form">
+				<form class="in-form" action="/users" method="POST" id="new_product">
+					<input id='product_name' type="text" placeholder="Name" name="product[name]" required>
+					<br>
+					<input id='product_base_price' type="text" placeholder="Base Price" name="product[base_price]" >
+					<br>
+					<textarea id='product_desc' placeholder="Description" name='product[description]'></textarea>
+					<br>
+					<input id='product_quantity_on_hand' type='text' placeholder="Quantity on Hand" name="product[quantity_on_hand]">
+					<br>
+					<input id='product_color' type='text' placeholder="Color" name="product[color]">
+					<br>
+					<input id='product_weight' type='text' placeholder="Weight" name="product[weight]">
+					<br>
+					<input id='product_other_attr' type='text' placeholder="Other Attributes" name="product[other_attributes]">
+					<br>
+					<input type="submit" >
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">		
+		<div class="col s6 offset-s3">
+			<div class="no-display e-form" id="edit_form">
+				<form class="in-form" id="edit_product">
+					<input id='edit_product_name' type="text" placeholder="Name" name="product[name]" required>
+					<br>
+					<input id='edit_product_base_price' type="text" placeholder="Base Price" name="product[base_price]" >
+					<br>
+					<textarea id='edit_product_desc' placeholder="Description" name='produc[description]'></textarea>
+					<br>
+					<input id='edit_product_quantity_on_hand' type='text' placeholder="Quantity on Hand" name="product[quantity_on_hand]">
+					<br>
+					<input id='edit_product_color' type='text' placeholder="Color" name="product[color]">
+					<br>
+					<input id='edit_product_weight' type='text' placeholder="Weight" name="product[weight]">
+					<br>
+					<input id='edit_product_other_attr' type='text' placeholder="Other Attributes" name="product[other_attributes]">
+					<br>
+					<input type="submit" >
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<ul id="products">
+		
+		</ul>
+	</div>
