@@ -10,9 +10,15 @@ $(document).ready(function() {
 			dataType: 'JSON'
 		}).done(function(data) {
 			data.forEach(function(product) {
-				$('#products').append('<li data-product-id="'
+				debugger;
+				$('#products').append('<div class="card col s6" >\n<div class="card-title"><li>' 
+																		+ product.name
+																		+ '<hr>'
+																		+ '<div class="card-action data-product-id="'
 																		+ product.id
-																		+ '" >' + product.name
+																		+ '>'
+																		+ product.description
+																		+ '<hr>'
 																		+ '<button class="delete_product">Delete</button>'
 																		+ '<button class="edit_button">Edit</button></li>');
 			});
